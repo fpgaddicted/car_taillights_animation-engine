@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Stefan Naco (fpgaddicted)
 -- 
 -- Create Date:    19:15:33 04/27/2017 
 -- Design Name: 
@@ -13,7 +13,7 @@
 -- Dependencies: 
 --
 -- Revision: 
--- Revision 0.01 - File Created
+-- Revision 0.2 Bug fix
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
@@ -46,7 +46,7 @@ begin
   variable  i: integer:=0;
 	begin
 	if rising_edge(clk) then
-	  if reset = '1' or en = '0' then
+	  if (reset = '1') or (en = '0') then
 			s <= s0;
 	  else 
 		case s is
