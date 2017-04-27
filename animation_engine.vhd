@@ -36,7 +36,7 @@ entity animation_engine is
            led_stop : out  STD_LOGIC_VECTOR (1 downto 0));
 end animation_engine;
 
-architecture Behavioral of animation_engine is
+architecture Port_map of animation_engine is
 
 COMPONENT turnsignals_anim
     PORT(
@@ -103,5 +103,5 @@ begin
 	led_right <= led_signal_R or led_signal_A;
 
 		  
-end Behavioral;
+end Port_map;
 
