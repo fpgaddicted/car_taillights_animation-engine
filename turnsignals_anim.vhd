@@ -14,7 +14,7 @@
 --
 -- Revision: 
 -- Revision 0.4 Commentary added
--- Additional Comments: 
+-- Additional Comments: car_taillights_animation-engine
 --
 ----------------------------------------------------------------------------------
 library IEEE;
