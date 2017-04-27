@@ -47,8 +47,9 @@ begin
 	begin
 	
 	if rising_edge(clk) then
-	  if reset = '1' or en = '0' then
+	  if (reset = '1') or (en = '0') then
 		   s <= s0;
+		led_out <= "000";
 	  else
 		case s is
 			when s0=>
