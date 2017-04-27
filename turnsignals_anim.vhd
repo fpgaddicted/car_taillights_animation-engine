@@ -32,8 +32,8 @@ use IEEE.NUMERIC_STD.ALL;
 entity turnsignals_anim is
     Port ( clk : in  STD_LOGIC;
            reset : in  STD_LOGIC;
-			  command : in STD_LOGIC;
-           led_out : out  STD_LOGIC_VECTOR(2 downto 0));
+	 command : in STD_LOGIC;
+         led_out : out  STD_LOGIC_VECTOR(2 downto 0));
 end turnsignals_anim;
 
 architecture animation_engine of turnsignals_anim is
