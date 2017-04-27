@@ -1,19 +1,19 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Stefan Naco (fpgaddicted)
 -- 
 -- Create Date:    13:05:35 04/27/2017 
 -- Design Name: 
 -- Module Name:    turnsignals_anim - Behavioral 
 -- Project Name: 
 -- Target Devices: 
--- Tool versions: 
+-- Tool versions: Xilinx ISE 14.7
 -- Description: 
 --
 -- Dependencies: 
 --
 -- Revision: 
--- Revision 0.01 - File Created
+-- Revision 0.4 Commentary added
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
@@ -37,7 +37,7 @@ entity turnsignals_anim is
 end turnsignals_anim;
 
 architecture animation_engine of turnsignals_anim is
-type state is (s0,s1,s2,s3,s4,s5);
+type state is (s0,s1,s2,s3,s4,s5); -- 6 FSM states 
 signal s : state;
  
 
