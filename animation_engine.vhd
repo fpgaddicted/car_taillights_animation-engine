@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Stefan Naco (fpgaaddicted)
 -- 
 -- Create Date:    17:26:19 04/27/2017 
 -- Design Name: 
@@ -13,7 +13,7 @@
 -- Dependencies: 
 --
 -- Revision: 
--- Revision 0.01 - File Created
+-- Revision 0.1 - Info change
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
