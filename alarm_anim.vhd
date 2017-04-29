@@ -63,8 +63,9 @@ begin
 			i:=i+1;
 			led_out <="111";
 				if(i=12500000) then
-					s <= s0;
 					i:=0;
+					s <= s0;
+					
 				end if;
 			end case;
 	 end if;
