@@ -13,7 +13,7 @@
 -- Dependencies: 
 --
 -- Revision: 
--- Revision 0.2 -Bug fix
+-- Revision 0.3 - Optimization fix -FINAL
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
@@ -42,7 +42,7 @@ signal s : state;
  
 
 begin
-  process(clk,reset,s,en)
+  process(clk)
   variable  i: integer:=0;
 	begin
 	if rising_edge(clk) then
