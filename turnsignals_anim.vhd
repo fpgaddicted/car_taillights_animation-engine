@@ -61,8 +61,8 @@ begin
 			i:=i+1;
 			led_out <="100";
 				if(i=6250000) then
-					s <= s2;
 					i:=0;
+					s <= s2;
 				end if;
 			when s2=>
 			i:=i+1;
@@ -75,24 +75,24 @@ begin
 			i:=i+1;
 			led_out <="111";
 				if(i=6250000) then
-					s <= s4;
 					i:=0;
+					s <= s4;
 				end if;
 					
 			when s4=>
 			i:=i+1;
 			led_out <="011";
 				if(i=6250000) then
-					s <= s5;
 					i:=0;
+					s <= s5;
 				end if;
 					
 			when s5=>
 			i:=i+1;
 			led_out <="001";
 				if(i=6250000) then
-					s <= s0;
 					i:=0;
+					s <= s0;
 				end if;
 			end case;
 		end if;
