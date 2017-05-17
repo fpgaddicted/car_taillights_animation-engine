@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: Stefan Naco (fpgaaddicted)
+-- Engineer: 
 -- 
 -- Create Date:    17:26:19 04/27/2017 
 -- Design Name: 
@@ -13,7 +13,7 @@
 -- Dependencies: 
 --
 -- Revision: 
--- Revision 0.1 - Info change
+-- Revision 0.01 - File Created
 -- Additional Comments: 
 --
 ----------------------------------------------------------------------------------
@@ -65,6 +65,15 @@ COMPONENT brake_anim
         );
     END COMPONENT;
 	 
+COMPONENT signal_mux 
+	 PORT( 
+			sel : in  STD_LOGIC;
+          sig_out : out  STD_LOGIC_VECTOR (2 downto 0);
+          sig_turn : in  STD_LOGIC_VECTOR (2 downto 0);
+          sig_alarm : in  STD_LOGIC_VECTOR (2 downto 0)
+			);
+	 END COMPONENT;
+	 	 
 signal led_signal_R: std_logic_vector (2 downto 0);
 signal led_signal_L : std_logic_vector (2 downto 0);
 signal led_signal_A : std_logic_vector (2 downto 0);	 
@@ -99,9 +108,22 @@ begin
 			 led_out => led_stop
 		  );
 			 
-	led_left <= led_signal_L or led_signal_A;
-	led_right <= led_signal_R or led_signal_A;
-
+		
+		  ALARM_CONTROL_L : signal_mux PORT MAP (
+					sel => t_alarm,
+					sig_turn => led_signal_L,
+					sig_alarm => led_signal_A,
+					sig_out => led_left
+			);
+			
+			ALARM_CONTROL_R : signal_mux PORT MAP (
+					sel => t_alarm,
+					sig_turn => led_signal_R,
+					sig_alarm => led_signal_A,
+					sig_out => led_right
+			);
+		 
+					
 		  
 end Port_map;
 
