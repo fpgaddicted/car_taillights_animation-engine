@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: fpgaddicted (Stefan Naco)
 -- 
 -- Create Date:    17:26:19 04/27/2017 
 -- Design Name: 
